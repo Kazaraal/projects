@@ -20,3 +20,9 @@ module "vpc" {
   private_subnet_az1_cidr   = var.private_subnet_az1_cidr
   private_subnet_az2_cidr   = var.private_subnet_az2_cidr
 }
+
+# Create the ec2
+# Role creation
+module "ec2" {
+  source = "./modules/ec2"  
+}
